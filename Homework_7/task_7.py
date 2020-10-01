@@ -1,5 +1,9 @@
 # Конвертирую значение, вводиммые с клавиатуры.
 # Далее с 1 по 121 строки кода операции аналогичные.
+def only_digits():
+    return print("You must input only digits")
+
+
 def inches_to_centimeters():
     # Проверяю, что вводится корректное значение.
     try:
@@ -8,7 +12,7 @@ def inches_to_centimeters():
         print(f"{inches} inches is {centimeters} centimeters")
         return centimeters
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 def centimeters_to_inches():
@@ -18,7 +22,7 @@ def centimeters_to_inches():
         print(f"{centimeters} centimeters is {inches} inches")
         return inches
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 def miles_to_kilometers():
@@ -28,7 +32,7 @@ def miles_to_kilometers():
         print(f"{miles} miles is {kilometers} kilometers")
         return kilometers
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 def kilometers_to_miles():
@@ -38,7 +42,7 @@ def kilometers_to_miles():
         print(f"{kilometers} kilometers is {miles} miles")
         return miles
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 def pounds_to_kilograms():
@@ -48,7 +52,7 @@ def pounds_to_kilograms():
         print(f"{pounds} pounds is {kilograms} kilograms")
         return kilograms
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 def kilograms_to_pounds():
@@ -58,7 +62,7 @@ def kilograms_to_pounds():
         print(f"{kilograms} kilograms is {pounds} pounds")
         return pounds
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 def ounces_to_grams():
@@ -68,7 +72,7 @@ def ounces_to_grams():
         print(f"{ounces} ounces is {grams} grams")
         return grams
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 def grams_to_ounces():
@@ -78,7 +82,7 @@ def grams_to_ounces():
         print(f"{grams} grams is {ounces} ounces")
         return ounces
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 def gallon_to_liter():
@@ -88,7 +92,7 @@ def gallon_to_liter():
         print(f"{gallon} gallon is {liter} liter")
         return liter
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 def liter_to_gallon():
@@ -98,7 +102,7 @@ def liter_to_gallon():
         print(f"{liter} liter is {gallon} gallon")
         return gallon
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 def pint_to_liter():
@@ -108,7 +112,7 @@ def pint_to_liter():
         print(f"{pint} pint is {liter} liter")
         return liter
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 def liter_to_pint():
@@ -118,7 +122,7 @@ def liter_to_pint():
         print(f"{liter} liter is {pint} pint")
         return pint
     except ValueError:
-        print("You must input only digits")
+        only_digits()
 
 
 print("1. inches to centimeters",
